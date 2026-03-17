@@ -11,20 +11,13 @@ var SYSTEM_INSTRUCTION
 var HTTP_REQUEST
 var CALLABLE_INSTANCE
 
-# Get an environment variable in the file
-func _get_environment_variable(filePath):
-	var file = FileAccess.open(filePath, FileAccess.READ)
-	var content = file.get_as_text()
-	content = content.strip_edges()
-	return content
-
 func _init(http_request, callable_instance, gemini_api_key=null, system_instruction="") -> void:
 
 	HTTP_REQUEST = http_request
 	CALLABLE_INSTANCE = callable_instance
 	
 	if gemini_api_key == null:
-		GEMINI_API_KEY = _get_environment_variable(GEMINI_API_KEY_FILE_PATH)
+		GEMINI_API_KEY = OS.get_environment("GEMINI_API_KEY")
 	else:
 		GEMINI_API_KEY =gemini_api_key
 		

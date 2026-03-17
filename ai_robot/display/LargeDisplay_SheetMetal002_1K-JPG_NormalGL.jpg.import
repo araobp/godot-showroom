@@ -3,25 +3,27 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dtiw3r82p5obf"
-path.s3tc="res://.godot/imported/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg-2d6f7c7e642bb5f24921f6973613178c.s3tc.ctex"
+path.s3tc="res://.godot/imported/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg-47c8c32a099cd97c134e84aedb4839f8.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "54a6a9e1008b2e9bd533fae93fce6308"
+"md5": "2f3df8c8cb1f54abf60e5295d185cbec"
 }
 
 [deps]
 
-source_file="res://Display/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg"
-dest_files=["res://.godot/imported/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg-2d6f7c7e642bb5f24921f6973613178c.s3tc.ctex"]
+source_file="res://display/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg"
+dest_files=["res://.godot/imported/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg-47c8c32a099cd97c134e84aedb4839f8.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=1
 compress/channel_pack=0
@@ -29,6 +31,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
 roughness/src_normal="res://display/LargeDisplay_SheetMetal002_1K-JPG_NormalGL.jpg"
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

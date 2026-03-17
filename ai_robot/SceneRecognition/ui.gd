@@ -10,17 +10,10 @@ var query = ""
 # TTS
 var voices
 
-# Get an environment variable in the file
-func _get_environment_variable(filePath):
-	var file = FileAccess.open(filePath, FileAccess.READ)
-	var content = file.get_as_text()
-	content = content.strip_edges()
-	return content
-
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if GEMINI_API_KEY == "":
-		GEMINI_API_KEY = _get_environment_variable(GEMINI_API_KEY_FILE_PATH)	
+		GEMINI_API_KEY = OS.get_environment("GEMINI_API_KEY")
 	$ChatWindow.visible = false
 	
 	voices = DisplayServer.tts_get_voices_for_language("en")
@@ -72,7 +65,7 @@ func chat():
 	self.add_child(req)
 	
 	var err = req.request(
-		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY,
+		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY,
 		headers,
 		HTTPClient.METHOD_POST,
 		JSON.stringify(payload)

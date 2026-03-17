@@ -8,11 +8,15 @@
 
 config_version=5
 
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
 [application]
 
 config/name="ai-robot"
 run/main_scene="uid://drtx0wg2gukpy"
-config/features=PackedStringArray("4.4", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="uid://db58ap1rbc021"
 
 [audio]
@@ -24,3 +28,7 @@ general/text_to_speech=true
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/stretch/mode="canvas_items"
+
+[dotnet]
+
+project/assembly_name="ai-robot"

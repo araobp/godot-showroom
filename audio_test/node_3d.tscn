@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cn5srv6o2teos"]
+[gd_scene format=3 uid="uid://cn5srv6o2teos"]
 
 [ext_resource type="Script" uid="uid://ddk0cwompi0ny" path="res://node_3d.gd" id="1_noarx"]
 [ext_resource type="AudioStream" uid="uid://b6toqhqknne5i" path="res://Bach,_BWV_147,_10._Jesus_bleibet_meine_Freude.ogg" id="2_a0tk4"]
@@ -17,17 +17,17 @@ sky = SubResource("Sky_i5arm")
 tonemap_mode = 2
 glow_enabled = true
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=249551854]
 script = ExtResource("1_noarx")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=979242701]
 environment = SubResource("Environment_wc5p8")
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=730315390]
 transform = Transform3D(-0.223709, 0, 0.974656, 0, 1, 0, -0.974656, 0, -0.223709, 0, 0, 0)
 script = ExtResource("4_r3fl7")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1860672412]
 stream = ExtResource("2_a0tk4")
 volume_db = -13.0
 autoplay = true

@@ -21,11 +21,12 @@ func _get_environment_variable(filePath):
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if GEMINI_API_KEY == "":
-		GEMINI_API_KEY = _get_environment_variable(GEMINI_API_KEY_FILE_PATH)	
+		GEMINI_API_KEY = OS.get_environment("GEMINI_API_KEY")
 	$ChatWindow.visible = false
 	
 	voices = DisplayServer.tts_get_voices_for_language("en")
-	
+	print(voices)
+	voices = [voices[1], voices[0], voices[2]]  # [Male, Female, Female2]
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -98,7 +99,7 @@ func chat():
 	self.add_child(req)
 	
 	var err = req.request(
-		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY,
+		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY,
 		headers,
 		HTTPClient.METHOD_POST,
 		JSON.stringify(payload)

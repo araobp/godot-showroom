@@ -1,20 +1,12 @@
 extends Control
 
 # Gemini API Key
-var GEMINI_API_KEY_FILE_PATH = "res://gemini_api_key_env.txt"
 @export var GEMINI_API_KEY = ""
 
-# Get an environment variable in the file
-func _get_environment_variable(filePath):
-	var file = FileAccess.open(filePath, FileAccess.READ)
-	var content = file.get_as_text()
-	content = content.strip_edges()
-	return content
-	
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	if GEMINI_API_KEY == "":
-		GEMINI_API_KEY = _get_environment_variable(GEMINI_API_KEY_FILE_PATH)	
+		GEMINI_API_KEY = OS.get_environment("GEMINI_API_KEY")
 	
 	$TextInput.insert_text_at_caret("You: ")
 	$TextInput.grab_focus()
@@ -106,7 +98,7 @@ func _chat(text):
 	self.add_child(req)
 	
 	var err = req.request(
-		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GEMINI_API_KEY,
+		"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + GEMINI_API_KEY,
 		headers,
 		HTTPClient.METHOD_POST,
 		JSON.stringify(payload)

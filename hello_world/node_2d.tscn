@@ -1,12 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://clrxetc2087xr"]
+[gd_scene format=3 uid="uid://clrxetc2087xr"]
 
 [ext_resource type="PackedScene" uid="uid://bs7a436t7l2wm" path="res://sprite_2d.tscn" id="1_wtcfe"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1533686054]
 
-[node name="Sprit2D" parent="." instance=ExtResource("1_wtcfe")]
+[node name="Sprit2D" parent="." unique_id=1572338645 instance=ExtResource("1_wtcfe")]
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1569902024]
 offset_left = 484.0
 offset_top = 523.0
 offset_right = 657.0

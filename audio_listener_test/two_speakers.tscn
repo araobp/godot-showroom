@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cmsdq0g7udk3v"]
+[gd_scene format=3 uid="uid://cmsdq0g7udk3v"]
 
 [ext_resource type="PackedScene" uid="uid://by06flfrqkofm" path="res://two_speakers.glb" id="1_r3tid"]
 [ext_resource type="Material" uid="uid://wnxq0t1ur5m8" path="res://floor.tres" id="2_bhq2d"]
@@ -18,56 +18,56 @@ top_radius = 10.0
 bottom_radius = 10.0
 height = 0.01
 
-[node name="two_speakers" instance=ExtResource("1_r3tid")]
+[node name="two_speakers" unique_id=2045001875 instance=ExtResource("1_r3tid")]
 
-[node name="Area" parent="." index="0"]
+[node name="Area" parent="." index="0" unique_id=1507512521]
 light_energy = 10.0
 
-[node name="Area_001" parent="." index="1"]
+[node name="Area_001" parent="." index="1" unique_id=667682087]
 light_color = Color(0, 0.694118, 0.913725, 1)
 light_energy = 10.0
 spot_range = 10.0
 
-[node name="Area_002" parent="." index="2"]
+[node name="Area_002" parent="." index="2" unique_id=452767145]
 light_color = Color(0, 0.960784, 0, 1)
 light_energy = 10.0
 spot_range = 10.0
 
-[node name="Area_003" parent="." index="3"]
+[node name="Area_003" parent="." index="3" unique_id=894682364]
 visible = false
 light_energy = 0.02
 light_size = 1.5
 omni_range = 10.0
 
-[node name="Area_004" parent="." index="4"]
+[node name="Area_004" parent="." index="4" unique_id=751644392]
 visible = false
 light_energy = 0.02
 light_size = 1.5
 omni_range = 10.0
 
-[node name="Area_005" parent="." index="5"]
+[node name="Area_005" parent="." index="5" unique_id=893506430]
 visible = false
 light_energy = 0.02
 light_size = 1.0
 omni_range = 10.0
 
-[node name="Area_006" parent="." index="6"]
+[node name="Area_006" parent="." index="6" unique_id=2027833654]
 visible = false
 light_energy = 0.02
 light_size = 1.0
 omni_range = 10.0
 
-[node name="Area_007" parent="." index="7"]
+[node name="Area_007" parent="." index="7" unique_id=520916488]
 light_color = Color(1, 0, 1, 1)
 light_energy = 10.0
 spot_range = 10.0
 
-[node name="Area_008" parent="." index="8"]
+[node name="Area_008" parent="." index="8" unique_id=60838738]
 light_color = Color(1, 0, 0.101961, 1)
 light_energy = 10.0
 spot_range = 10.0
 
-[node name="Area_009" type="SpotLight3D" parent="." index="9"]
+[node name="Area_009" type="SpotLight3D" parent="." index="9" unique_id=947353025]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 7.26747, 0)
 light_color = Color(0.12799, 0.703024, 0.601585, 1)
 light_energy = 10.0
@@ -75,35 +75,35 @@ spot_range = 10.0
 spot_angle = 40.0
 spot_angle_attenuation = 1.23333
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Speaker_R" index="3"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Speaker_R" parent_id_path=PackedInt32Array(441361763) index="3" unique_id=2006720112]
 stream = ExtResource("2_evl0d")
 volume_db = -13.0
 autoplay = true
 parameters/looping = false
 
-[node name="ReflectionProbe" type="ReflectionProbe" parent="Speaker_R" index="4"]
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Speaker_R" parent_id_path=PackedInt32Array(441361763) index="4" unique_id=1172674489]
 size = Vector3(200, 200, 200)
 
-[node name="Circle" parent="." index="13"]
+[node name="Circle" parent="." index="13" unique_id=1867904264]
 surface_material_override/0 = SubResource("StandardMaterial3D_bhq2d")
 
-[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Speaker_L" index="3"]
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Speaker_L" parent_id_path=PackedInt32Array(1176952066) index="3" unique_id=1072217634]
 stream = ExtResource("2_evl0d")
 volume_db = -13.0
 autoplay = true
 parameters/looping = true
 
-[node name="ReflectionProbe" type="ReflectionProbe" parent="Speaker_L" index="4"]
+[node name="ReflectionProbe" type="ReflectionProbe" parent="Speaker_L" parent_id_path=PackedInt32Array(1176952066) index="4" unique_id=728503184]
 size = Vector3(200, 200, 200)
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="15"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." index="15" unique_id=1609308324]
 environment = SubResource("Environment_r3tid")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment" index="0"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment" index="0" unique_id=495387621]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00384545, 0)
 mesh = SubResource("CylinderMesh_evl0d")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="." index="16"]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." index="16" unique_id=993443693]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -111,17 +111,17 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" index="0"]
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" index="0" unique_id=1612501699]
 handle_input_locally = false
 msaa_3d = 1
 audio_listener_enable_3d = true
 size = Vector2i(1920, 1080)
 render_target_update_mode = 4
 
-[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" index="0"]
+[node name="Camera3D" type="Camera3D" parent="SubViewportContainer/SubViewport" index="0" unique_id=1024122972]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.17022, 0)
 fov = 40.0
 script = ExtResource("4_78i8d")
 
-[node name="AudioListener3D" type="AudioListener3D" parent="SubViewportContainer/SubViewport/Camera3D" index="0"]
+[node name="AudioListener3D" type="AudioListener3D" parent="SubViewportContainer/SubViewport/Camera3D" index="0" unique_id=1940551362]
 current = true

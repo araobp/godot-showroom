@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bq27dc6rcgdtr"]
+[gd_scene format=3 uid="uid://bq27dc6rcgdtr"]
 
 [ext_resource type="Script" uid="uid://cm2f5eoycwsgl" path="res://main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://xoemyrjlxba6" path="res://control.gd" id="2_0xm2m"]
@@ -50,59 +50,59 @@ roughness = 0.3
 content_margin_left = 10.0
 content_margin_top = 8.0
 
-[node name="Main" type="Node3D"]
+[node name="Main" type="Node3D" unique_id=936899567]
 script = ExtResource("1_ig7tw")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=971331981]
 environment = SubResource("Environment_0xm2m")
 
-[node name="Building" type="CSGMesh3D" parent="."]
+[node name="Building" type="CSGMesh3D" parent="." unique_id=130485803]
 calculate_tangents = false
 mesh = SubResource("BoxMesh_lquwl")
 
-[node name="CSGMesh3D3" type="CSGMesh3D" parent="Building"]
+[node name="CSGMesh3D3" type="CSGMesh3D" parent="Building" unique_id=1953360476]
 transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 1, 0, 0, 0.1)
 operation = 2
 mesh = SubResource("BoxMesh_lquwl")
 
-[node name="CSGMesh3D4" type="CSGMesh3D" parent="Building"]
+[node name="CSGMesh3D4" type="CSGMesh3D" parent="Building" unique_id=893778802]
 transform = Transform3D(0.605601, 0, 0, 0, 0.0974174, 0, 0, 0, 0.5, 0, 0.285728, -0.516716)
 operation = 2
 mesh = SubResource("BoxMesh_lquwl")
 
-[node name="Light" type="CSGMesh3D" parent="Building"]
+[node name="Light" type="CSGMesh3D" parent="Building" unique_id=1242185685]
 transform = Transform3D(0.281766, 0, 0.102995, 0, 0.3, 0, -0.102995, 0, 0.281766, 0, 0, 0)
 mesh = SubResource("SphereMesh_1bvp3")
 metadata/_edit_group_ = true
 
-[node name="Camera3D" type="Camera3D" parent="Building/Light"]
+[node name="Camera3D" type="Camera3D" parent="Building/Light" unique_id=22552562]
 transform = Transform3D(3.3029, 0, -0.449388, 0, 3.33333, 0, 0.449388, 0, 3.3029, 0.106867, 0, 7.25522)
 fov = 40.0
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/Light"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/Light" unique_id=560197703]
 transform = Transform3D(0.100114, 0, 0, 0, 0.519209, 0, -3.72529e-09, 0, 0.0222274, 0, 0.925434, 0)
 mesh = SubResource("CylinderMesh_7dm0k")
 surface_material_override/0 = SubResource("StandardMaterial3D_ig7tw")
 
-[node name="HingeLeft" type="Node3D" parent="Building"]
+[node name="HingeLeft" type="Node3D" parent="Building" unique_id=1066505548]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.394547, 0, 0.483975)
 metadata/_edit_group_ = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/HingeLeft"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/HingeLeft" unique_id=1958661427]
 transform = Transform3D(0.369472, 0, 0, 0, 0.769922, 0, 0, 0, 0.0293155, 0.196769, 0, -0.0036152)
 mesh = SubResource("BoxMesh_0xm2m")
 surface_material_override/0 = SubResource("StandardMaterial3D_1bvp3")
 
-[node name="HingeRight" type="Node3D" parent="Building"]
+[node name="HingeRight" type="Node3D" parent="Building" unique_id=1546747925]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.395, 0, 0.484)
 metadata/_edit_group_ = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/HingeRight"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Building/HingeRight" unique_id=1729433737]
 transform = Transform3D(0.369472, 0, 0, 0, 0.769922, 0, 0, 0, 0.0293155, -0.197, 0, -0.004)
 mesh = SubResource("BoxMesh_0xm2m")
 surface_material_override/0 = SubResource("StandardMaterial3D_1bvp3")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="." unique_id=1270731117]
 layout_mode = 3
 anchors_preset = 11
 anchor_left = 1.0
@@ -113,7 +113,7 @@ grow_horizontal = 0
 grow_vertical = 2
 script = ExtResource("2_0xm2m")
 
-[node name="TextInput" type="TextEdit" parent="Control"]
+[node name="TextInput" type="TextEdit" parent="Control" unique_id=1695984939]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0

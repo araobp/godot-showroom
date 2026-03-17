@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://d3kql36uubtpj"]
+[gd_scene format=3 uid="uid://d3kql36uubtpj"]
 
 [ext_resource type="PackedScene" uid="uid://rfghku3bqkg6" path="res://wave_hip_hop_dance.tscn" id="1_a202f"]
 [ext_resource type="Script" uid="uid://ck0cxf2sja3l" path="res://node_3d.gd" id="1_noarx"]
@@ -28,34 +28,34 @@ albedo_color = Color(0.853674, 0.244194, 0.45545, 1)
 metallic = 1.0
 roughness = 0.0
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=1446340737]
 script = ExtResource("1_noarx")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=968485712]
 environment = SubResource("Environment_a0tk4")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1883767057]
 transform = Transform3D(-0.708668, 0.178444, 0.682604, 0.481097, -0.585464, 0.652517, 0.516077, 0.790816, 0.32905, 0, 3, 0)
 light_color = Color(1, 1, 0.87451, 1)
 shadow_enabled = true
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1078544976]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.582632, 1.50311)
 
-[node name="Wave Hip Hop Dance2" parent="." instance=ExtResource("1_a202f")]
+[node name="Wave Hip Hop Dance2" parent="." unique_id=880935631 instance=ExtResource("1_a202f")]
 script = ExtResource("3_a0tk4")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1023177721]
 transform = Transform3D(62.7149, 0, 0, 0, 1, 0, 0, 0, 63.7853, 0, 0, 0)
 material_override = ExtResource("4_r3fl7")
 mesh = SubResource("PlaneMesh_jka67")
 
-[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+[node name="CSGMesh3D" type="CSGMesh3D" parent="." unique_id=456278947]
 transform = Transform3D(0.42, 0, 0, 0, 1, 0, 0, 0, 0.5, -1, 1, -2)
 mesh = SubResource("CylinderMesh_r3fl7")
 material = SubResource("StandardMaterial3D_jka67")
 
-[node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="." unique_id=362733414]
 transform = Transform3D(0.42, 0, 0, 0, 1, 0, 0, 0, 0.5, 1, 1, -2)
 mesh = SubResource("CylinderMesh_r3fl7")
 material = SubResource("StandardMaterial3D_jka67")

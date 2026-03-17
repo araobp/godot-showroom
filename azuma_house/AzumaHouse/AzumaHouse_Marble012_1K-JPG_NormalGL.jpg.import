@@ -10,7 +10,7 @@ metadata={
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1cc96e31d9778275b813c8f59a4f5dca"
+"md5": "7f3f91d82d0db86b375270734604a8f8"
 }
 
 [deps]
@@ -23,6 +23,8 @@ dest_files=["res://.godot/imported/AzumaHouse_Marble012_1K-JPG_NormalGL.jpg-027d
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=1
 compress/channel_pack=0
@@ -30,6 +32,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
 roughness/src_normal="res://AzumaHouse/AzumaHouse_Marble012_1K-JPG_NormalGL.jpg"
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

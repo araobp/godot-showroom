@@ -27,9 +27,9 @@ To set your Gemini API key, enter your key in the following property editor:
 
 <img src="docs/gemini_api_key.jpg" width=300>
 
-or create "gemini_api_key_env.txt" file with your Gemini API key value. The file is ignored by .gitignore.
+or set the `GEMINI_API_KEY` environment variable.
 
-### AI Robot with Gemini
+### AI Robot with Gemini 2.5 Flash
 
 I modified the robot from [Unity Starter Assets](https://assetstore.unity.com/packages/essentials/starter-assets-thirdperson-updates-in-new-charactercontroller-pa-196526) with Blender and added Mixamo animations.
 

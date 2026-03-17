@@ -9,7 +9,7 @@ metadata={
 "vram_texture": true
 }
 generator_parameters={
-"md5": "9fc496ed16e5648df08d036c4b6abd4d"
+"md5": "82183b18b3ad8f4dd50249d6517c1bcc"
 }
 
 [deps]
@@ -22,6 +22,8 @@ dest_files=["res://.godot/imported/vr_theater_IMG_0232.jpg-6858016eafc4526e2d077
 compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
@@ -29,6 +31,10 @@ mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

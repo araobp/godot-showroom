@@ -1,4 +1,4 @@
-[gd_resource type="VisualShader" load_steps=11 format=3 uid="uid://c38jmruyer3jo"]
+[gd_resource type="VisualShader" format=3 uid="uid://c38jmruyer3jo"]
 
 [ext_resource type="Texture2D" uid="uid://chrb0qtc7pbkq" path="res://Bricks094_1K-JPG_Color.jpg" id="1_pk8e6"]
 [ext_resource type="Texture2D" uid="uid://bqutk4tp2q6ux" path="res://Bricks094_1K-JPG_NormalGL.jpg" id="2_26crh"]
@@ -28,52 +28,7 @@ op_type = 0
 operator = 2
 
 [resource]
-code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_back, diffuse_lambert, specular_schlick_ggx;
-
-uniform sampler2D tex_frg_4 : source_color;
-uniform sampler2D tex_frg_6;
-uniform sampler2D tex_frg_7;
-uniform sampler2D tex_frg_5 : hint_normal;
-
-
-
-void fragment() {
-// Input:8
-	vec2 n_out8p0 = UV;
-
-
-// VectorOp:9
-	vec2 n_in9p1 = vec2(3.00000, 3.00000);
-	vec2 n_out9p0 = n_out8p0 * n_in9p1;
-
-
-// Texture2D:4
-	vec4 n_out4p0 = texture(tex_frg_4, n_out9p0);
-
-
-// Texture2D:6
-	vec4 n_out6p0 = texture(tex_frg_6, n_out9p0);
-
-
-// Texture2D:7
-	vec4 n_out7p0 = texture(tex_frg_7, n_out9p0);
-
-
-// Texture2D:5
-	vec4 n_out5p0 = texture(tex_frg_5, n_out9p0);
-
-
-// Output:0
-	ALBEDO = vec3(n_out4p0.xyz);
-	ROUGHNESS = n_out6p0.x;
-	AO = n_out7p0.x;
-	NORMAL_MAP = vec3(n_out5p0.xyz);
-
-
-}
-"
-graph_offset = Vector2(-227.39, -58.4553)
+nodes/vertex/0/position = Vector2(684, 171)
 nodes/fragment/0/position = Vector2(1260, 80)
 nodes/fragment/4/node = SubResource("VisualShaderNodeTexture_k8diy")
 nodes/fragment/4/position = Vector2(160, 80)

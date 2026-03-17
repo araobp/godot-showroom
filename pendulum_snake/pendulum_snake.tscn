@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dcumqqrwwwyka"]
+[gd_scene format=3 uid="uid://dcumqqrwwwyka"]
 
 [ext_resource type="Script" uid="uid://bv3co4b1itevy" path="res://pendulum_snake.gd" id="1_u7uwg"]
 [ext_resource type="PackedScene" uid="uid://dixeajduuttbv" path="res://pendulum_snake/pendulum_snake_body.glb" id="2_3kixp"]
@@ -26,212 +26,212 @@ background_mode = 1
 background_color = Color(0.105614, 0.105614, 0.105614, 1)
 sky = SubResource("Sky_ty2xf")
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=471758431]
 process_mode = 1
 script = ExtResource("1_u7uwg")
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1446203570]
 environment = SubResource("Environment_6ipsd")
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2090938841]
 transform = Transform3D(0.705185, 0.271302, -0.655064, 0.195846, 0.813419, 0.547717, 0.681438, -0.514533, 0.520478, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Camera3D" type="Camera3D" parent="."]
+[node name="Camera3D" type="Camera3D" parent="." unique_id=424821466]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.369477, 1.471)
 fov = 45.0
 
-[node name="Hinges" type="Node3D" parent="."]
+[node name="Hinges" type="Node3D" parent="." unique_id=791448833]
 
-[node name="HingeJoint3D_P15" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P15" type="HingeJoint3D" parent="Hinges" unique_id=523825282]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P15")
 
-[node name="HingeJoint3D_P14" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P14" type="HingeJoint3D" parent="Hinges" unique_id=160497866]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P14")
 
-[node name="HingeJoint3D_P13" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P13" type="HingeJoint3D" parent="Hinges" unique_id=1486510033]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P13")
 
-[node name="HingeJoint3D_P12" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P12" type="HingeJoint3D" parent="Hinges" unique_id=1494832151]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P12")
 
-[node name="HingeJoint3D_P11" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P11" type="HingeJoint3D" parent="Hinges" unique_id=1219892478]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P11")
 
-[node name="HingeJoint3D_P10" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P10" type="HingeJoint3D" parent="Hinges" unique_id=799754538]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P10")
 
-[node name="HingeJoint3D_P9" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P9" type="HingeJoint3D" parent="Hinges" unique_id=392317618]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P9")
 
-[node name="HingeJoint3D_P8" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P8" type="HingeJoint3D" parent="Hinges" unique_id=1292297715]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P8")
 
-[node name="HingeJoint3D_P7" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P7" type="HingeJoint3D" parent="Hinges" unique_id=1552870372]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P7")
 
-[node name="HingeJoint3D_P6" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P6" type="HingeJoint3D" parent="Hinges" unique_id=2040144216]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P6")
 
-[node name="HingeJoint3D_P5" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P5" type="HingeJoint3D" parent="Hinges" unique_id=691073694]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P5")
 
-[node name="HingeJoint3D_P4" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P4" type="HingeJoint3D" parent="Hinges" unique_id=2068180768]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P4")
 
-[node name="HingeJoint3D_P3" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P3" type="HingeJoint3D" parent="Hinges" unique_id=70422156]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P3")
 
-[node name="HingeJoint3D_P2" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P2" type="HingeJoint3D" parent="Hinges" unique_id=1174124946]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P2")
 
-[node name="HingeJoint3D_P1" type="HingeJoint3D" parent="Hinges"]
+[node name="HingeJoint3D_P1" type="HingeJoint3D" parent="Hinges" unique_id=682562931]
 node_a = NodePath("../../StaticBody3D")
 node_b = NodePath("../../Pendulums/RigidBody3D_P1")
 
-[node name="Pendulums" parent="." instance=ExtResource("2_3kixp")]
+[node name="Pendulums" parent="." unique_id=2145940018 instance=ExtResource("2_3kixp")]
 
-[node name="RigidBody3D_P15" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P15" type="RigidBody3D" parent="Pendulums" unique_id=1048091349]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -6.02, 0)
 
-[node name="P15" parent="Pendulums/RigidBody3D_P15" instance=ExtResource("3_ngcpf")]
+[node name="P15" parent="Pendulums/RigidBody3D_P15" unique_id=1112609648 instance=ExtResource("3_ngcpf")]
 
-[node name="RigidBody3D_P14" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P14" type="RigidBody3D" parent="Pendulums" unique_id=2130888955]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -5.79, 0)
 
-[node name="P14" parent="Pendulums/RigidBody3D_P14" instance=ExtResource("4_h63oo")]
+[node name="P14" parent="Pendulums/RigidBody3D_P14" unique_id=2050174130 instance=ExtResource("4_h63oo")]
 
-[node name="RigidBody3D_P13" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P13" type="RigidBody3D" parent="Pendulums" unique_id=1240698000]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -5.58, 0)
 
-[node name="P13" parent="Pendulums/RigidBody3D_P13" instance=ExtResource("5_qqdo1")]
+[node name="P13" parent="Pendulums/RigidBody3D_P13" unique_id=2033348114 instance=ExtResource("5_qqdo1")]
 
-[node name="RigidBody3D_P12" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P12" type="RigidBody3D" parent="Pendulums" unique_id=689239434]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -5.37, 0)
 
-[node name="P12" parent="Pendulums/RigidBody3D_P12" instance=ExtResource("6_0tjrh")]
+[node name="P12" parent="Pendulums/RigidBody3D_P12" unique_id=913817094 instance=ExtResource("6_0tjrh")]
 
-[node name="RigidBody3D_P11" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P11" type="RigidBody3D" parent="Pendulums" unique_id=1922764226]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -5.18, 0)
 
-[node name="P11" parent="Pendulums/RigidBody3D_P11" instance=ExtResource("7_5dlxv")]
+[node name="P11" parent="Pendulums/RigidBody3D_P11" unique_id=1836616057 instance=ExtResource("7_5dlxv")]
 
-[node name="RigidBody3D_P10" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P10" type="RigidBody3D" parent="Pendulums" unique_id=609399099]
 transform = Transform3D(0.939692, 0.34202, 0, -0.34202, 0.939692, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.99, 0)
 
-[node name="P10" parent="Pendulums/RigidBody3D_P10" instance=ExtResource("8_tdcl2")]
+[node name="P10" parent="Pendulums/RigidBody3D_P10" unique_id=1757919126 instance=ExtResource("8_tdcl2")]
 
-[node name="RigidBody3D_P9" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P9" type="RigidBody3D" parent="Pendulums" unique_id=468115426]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.82, 0)
 
-[node name="P9" parent="Pendulums/RigidBody3D_P9" instance=ExtResource("9_8vgor")]
+[node name="P9" parent="Pendulums/RigidBody3D_P9" unique_id=1740264209 instance=ExtResource("9_8vgor")]
 
-[node name="RigidBody3D_P8" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P8" type="RigidBody3D" parent="Pendulums" unique_id=1402293662]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.66, 0)
 
-[node name="P8" parent="Pendulums/RigidBody3D_P8" instance=ExtResource("10_k0s7b")]
+[node name="P8" parent="Pendulums/RigidBody3D_P8" unique_id=1059084926 instance=ExtResource("10_k0s7b")]
 
-[node name="RigidBody3D_P7" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P7" type="RigidBody3D" parent="Pendulums" unique_id=1838329931]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.5, 0)
 
-[node name="P7" parent="Pendulums/RigidBody3D_P7" instance=ExtResource("11_o5ma0")]
+[node name="P7" parent="Pendulums/RigidBody3D_P7" unique_id=2112154032 instance=ExtResource("11_o5ma0")]
 
-[node name="RigidBody3D_P6" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P6" type="RigidBody3D" parent="Pendulums" unique_id=473554610]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.35, 0)
 
-[node name="P6" parent="Pendulums/RigidBody3D_P6" instance=ExtResource("12_e8q5m")]
+[node name="P6" parent="Pendulums/RigidBody3D_P6" unique_id=1632814178 instance=ExtResource("12_e8q5m")]
 
-[node name="RigidBody3D_P5" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P5" type="RigidBody3D" parent="Pendulums" unique_id=1055928003]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.21, 0)
 
-[node name="P5" parent="Pendulums/RigidBody3D_P5" instance=ExtResource("13_hj42h")]
+[node name="P5" parent="Pendulums/RigidBody3D_P5" unique_id=1204274253 instance=ExtResource("13_hj42h")]
 
-[node name="RigidBody3D_P4" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P4" type="RigidBody3D" parent="Pendulums" unique_id=1057697567]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -4.07, 0)
 
-[node name="P4" parent="Pendulums/RigidBody3D_P4" instance=ExtResource("14_ns8nj")]
+[node name="P4" parent="Pendulums/RigidBody3D_P4" unique_id=1319618684 instance=ExtResource("14_ns8nj")]
 
-[node name="RigidBody3D_P3" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P3" type="RigidBody3D" parent="Pendulums" unique_id=1686539025]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -3.95, 0)
 
-[node name="P3" parent="Pendulums/RigidBody3D_P3" instance=ExtResource("15_wsbr1")]
+[node name="P3" parent="Pendulums/RigidBody3D_P3" unique_id=1634735646 instance=ExtResource("15_wsbr1")]
 
-[node name="RigidBody3D_P2" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P2" type="RigidBody3D" parent="Pendulums" unique_id=1098668177]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -3.82, 0)
 
-[node name="P2" parent="Pendulums/RigidBody3D_P2" instance=ExtResource("16_65dqs")]
+[node name="P2" parent="Pendulums/RigidBody3D_P2" unique_id=56676568 instance=ExtResource("16_65dqs")]
 
-[node name="RigidBody3D_P1" type="RigidBody3D" parent="Pendulums"]
+[node name="RigidBody3D_P1" type="RigidBody3D" parent="Pendulums" unique_id=1418786064]
 transform = Transform3D(0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 0, 0, 1, 0, 0, 0)
 gravity_scale = 10.0
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -3.71, 0)
 
-[node name="P1" parent="Pendulums/RigidBody3D_P1" instance=ExtResource("17_2u70n")]
+[node name="P1" parent="Pendulums/RigidBody3D_P1" unique_id=622007219 instance=ExtResource("17_2u70n")]
 
-[node name="StaticBody3D" type="StaticBody3D" parent="."]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=364994457]
 
-[node name="Rod" parent="StaticBody3D" instance=ExtResource("18_704ih")]
+[node name="Rod" parent="StaticBody3D" unique_id=988789992 instance=ExtResource("18_704ih")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1764916296]
 
-[node name="ButtonStart" type="Button" parent="CanvasLayer"]
+[node name="ButtonStart" type="Button" parent="CanvasLayer" unique_id=1705492981]
 process_mode = 3
 offset_left = 1664.0
 offset_top = 64.0
@@ -240,7 +240,7 @@ offset_bottom = 128.0
 theme_override_font_sizes/font_size = 36
 text = "Start"
 
-[node name="ButtonReset" type="Button" parent="CanvasLayer"]
+[node name="ButtonReset" type="Button" parent="CanvasLayer" unique_id=1107367084]
 process_mode = 3
 offset_left = 1664.0
 offset_top = 224.0
@@ -250,7 +250,7 @@ theme_override_font_sizes/font_size = 36
 text = "Reset
 "
 
-[node name="ButtonTogglePause" type="Button" parent="CanvasLayer"]
+[node name="ButtonTogglePause" type="Button" parent="CanvasLayer" unique_id=1321704819]
 process_mode = 3
 offset_left = 1664.0
 offset_top = 144.0

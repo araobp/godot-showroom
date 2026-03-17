@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d3xps6jjr5lwr"]
+[gd_scene format=3 uid="uid://d3xps6jjr5lwr"]
 
 [ext_resource type="PackedScene" uid="uid://dqkaagaewh7un" path="res://vr_theater.glb" id="1_6gv1x"]
 [ext_resource type="Script" uid="uid://yvetrkk2iukm" path="res://vr_theater.gd" id="2_5xsj8"]
@@ -27,21 +27,20 @@ glow_enabled = true
 glow_intensity = 0.98
 glow_strength = 0.81
 glow_bloom = 0.11
-glow_blend_mode = 1
 volumetric_fog_density = 0.1
 
-[node name="Node3D" type="Node3D"]
+[node name="Node3D" type="Node3D" unique_id=521335766]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=658677351]
 environment = SubResource("Environment_buu1m")
 
-[node name="vr_theater" parent="." instance=ExtResource("1_6gv1x")]
+[node name="vr_theater" parent="." unique_id=699939881 instance=ExtResource("1_6gv1x")]
 script = ExtResource("2_5xsj8")
 
-[node name="ReflectionProbe" type="ReflectionProbe" parent="vr_theater"]
+[node name="ReflectionProbe" type="ReflectionProbe" parent="vr_theater" unique_id=747626127]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.789351, -0.578589)
 
-[node name="SpotLight3D" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D" type="SpotLight3D" parent="vr_theater" unique_id=1922243131]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.35834, 0)
 light_color = Color(0.57816, 0.597976, 0.912258, 1)
 light_volumetric_fog_energy = 6.077
@@ -50,7 +49,7 @@ shadow_enabled = true
 spot_range = 7.71
 spot_angle = 35.0
 
-[node name="SpotLight3D2" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D2" type="SpotLight3D" parent="vr_theater" unique_id=1914983900]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.35834, 4.82545)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 5.0
@@ -59,7 +58,7 @@ shadow_enabled = true
 spot_range = 15.0
 spot_angle = 45.4
 
-[node name="SpotLight3D5" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D5" type="SpotLight3D" parent="vr_theater" unique_id=61242031]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 3.35834, 2.85453)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 3.144
@@ -69,7 +68,7 @@ shadow_opacity = 0.0
 spot_range = 6.957
 spot_angle = 10.03
 
-[node name="SpotLight3D6" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D6" type="SpotLight3D" parent="vr_theater" unique_id=501336472]
 transform = Transform3D(1, 0.000436332, 1.90727e-11, 0, -4.37114e-08, 1, 0.000436332, -1, -4.37114e-08, 2.73887, 3.35834, 2.85453)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 3.144
@@ -79,13 +78,13 @@ shadow_opacity = 0.0
 spot_range = 6.957
 spot_angle = 10.03
 
-[node name="SpotLight3D8" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D8" type="SpotLight3D" parent="vr_theater" unique_id=923084799]
 transform = Transform3D(1, 0, 0, 0, 0.862452, 0.506139, 0, -0.506139, 0.862452, 0, 2.02564, 0.548323)
 light_energy = 1.6
 shadow_enabled = true
 spot_angle = 20.52
 
-[node name="SpotLight3D7" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D7" type="SpotLight3D" parent="vr_theater" unique_id=353905147]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.739, 3.358, 2.855)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 3.144
@@ -95,7 +94,7 @@ shadow_opacity = 0.0
 spot_range = 6.957
 spot_angle = 10.03
 
-[node name="SpotLight3D3" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D3" type="SpotLight3D" parent="vr_theater" unique_id=1462952470]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 4.5, 3.358, 4.825)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 5.0
@@ -104,7 +103,7 @@ shadow_enabled = true
 spot_range = 15.0
 spot_angle = 45.4
 
-[node name="SpotLight3D4" type="SpotLight3D" parent="vr_theater"]
+[node name="SpotLight3D4" type="SpotLight3D" parent="vr_theater" unique_id=869042170]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -4.5, 3.358, 4.825)
 light_color = Color(0.860478, 0.715344, 0.65045, 1)
 light_energy = 5.0
@@ -113,34 +112,34 @@ shadow_enabled = true
 spot_range = 15.0
 spot_angle = 45.4
 
-[node name="plant1" parent="vr_theater" instance=ExtResource("3_kgmfh")]
+[node name="plant1" parent="vr_theater" unique_id=1162399333 instance=ExtResource("3_kgmfh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.65308, 0.58073, 2.82059)
 
-[node name="plant2" parent="vr_theater" instance=ExtResource("4_jxqc1")]
+[node name="plant2" parent="vr_theater" unique_id=666629513 instance=ExtResource("4_jxqc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.66127, 0.581961, 2.66146)
 
-[node name="plant3" parent="vr_theater" instance=ExtResource("5_m362y")]
+[node name="plant3" parent="vr_theater" unique_id=1306621920 instance=ExtResource("5_m362y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00705731, 0.56918, 2.84154)
 
-[node name="Chair" parent="vr_theater" instance=ExtResource("10_jxqc1")]
+[node name="Chair" parent="vr_theater" unique_id=1446034921 instance=ExtResource("10_jxqc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0423015, -1.23236)
 
-[node name="Table" parent="vr_theater" instance=ExtResource("11_m362y")]
+[node name="Table" parent="vr_theater" unique_id=1199399328 instance=ExtResource("11_m362y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0335078, -0.581429)
 
-[node name="Models" type="Node3D" parent="vr_theater"]
+[node name="Models" type="Node3D" parent="vr_theater" unique_id=1664305629]
 script = ExtResource("12_mkmqu")
 
-[node name="Gentleman" parent="vr_theater/Models" instance=ExtResource("9_3d07m")]
+[node name="Gentleman" parent="vr_theater/Models" unique_id=516692033 instance=ExtResource("9_3d07m")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0548338, -1.137)
 
-[node name="Lady" parent="vr_theater/Models" instance=ExtResource("12_m362y")]
+[node name="Lady" parent="vr_theater/Models" unique_id=655388943 instance=ExtResource("12_m362y")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0313402, -1.13662)
 
-[node name="Lady2" parent="vr_theater/Models" instance=ExtResource("14_bh4oc")]
+[node name="Lady2" parent="vr_theater/Models" unique_id=221328224 instance=ExtResource("14_bh4oc")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.001, 0.0382124, -1.137)
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="vr_theater"]
+[node name="SubViewportContainer" type="SubViewportContainer" parent="vr_theater" unique_id=1712734985]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -148,42 +147,42 @@ grow_horizontal = 2
 grow_vertical = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="vr_theater/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="vr_theater/SubViewportContainer" unique_id=619846335]
 handle_input_locally = false
 size = Vector2i(1920, 1080)
 render_target_update_mode = 4
 
-[node name="Cameras" type="Node3D" parent="vr_theater/SubViewportContainer/SubViewport"]
+[node name="Cameras" type="Node3D" parent="vr_theater/SubViewportContainer/SubViewport" unique_id=917976209]
 script = ExtResource("10_m362y")
 
-[node name="Camera1" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras"]
+[node name="Camera1" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras" unique_id=2031335415]
 transform = Transform3D(1, 0, 0, 0, 0.998724, 0.0505058, 0, -0.0505058, 0.998724, 0, 1.18767, 0)
 current = true
 fov = 30.0
 
-[node name="Camera2" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras"]
+[node name="Camera2" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras" unique_id=2039155549]
 transform = Transform3D(0.535651, 0.0903489, -0.839592, -0.0339389, 0.99576, 0.0855014, 0.843757, -0.0173041, 0.536446, -1.41336, 1.20487, -0.20507)
 current = true
 fov = 25.0
 
-[node name="Camera3" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras"]
+[node name="Camera3" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras" unique_id=484381075]
 transform = Transform3D(0.71934, 0.223865, -0.657598, 0, 0.946649, 0.322266, 0.694658, -0.231819, 0.680963, -0.770539, 1.64529, 0.28043)
 fov = 45.9
 
-[node name="Camera4" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras"]
+[node name="Camera4" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras" unique_id=2097101355]
 transform = Transform3D(0.498488, -0.0483915, 0.865545, 0, 0.998441, 0.0558215, -0.866897, -0.0278263, 0.49771, 1.76412, 1.48082, 0.435035)
 fov = 27.0
 
-[node name="Camera5" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras"]
+[node name="Camera5" type="Camera3D" parent="vr_theater/SubViewportContainer/SubViewport/Cameras" unique_id=2083760285]
 transform = Transform3D(0.831954, 0, -0.554844, 0, 1, 0, 0.554844, 0, 0.831954, -2.01547, 1.45934, 5.16891)
 fov = 45.0
 
-[node name="CanvasLayer" type="CanvasLayer" parent="vr_theater"]
+[node name="CanvasLayer" type="CanvasLayer" parent="vr_theater" unique_id=338473689]
 script = ExtResource("6_b67af")
 
-[node name="ChatWindow" type="Node2D" parent="vr_theater/CanvasLayer"]
+[node name="ChatWindow" type="Node2D" parent="vr_theater/CanvasLayer" unique_id=1748913210]
 
-[node name="TextInput" type="TextEdit" parent="vr_theater/CanvasLayer/ChatWindow"]
+[node name="TextInput" type="TextEdit" parent="vr_theater/CanvasLayer/ChatWindow" unique_id=462757326]
 offset_left = 280.0
 offset_top = 944.0
 offset_right = 1640.0
@@ -192,7 +191,7 @@ theme_override_font_sizes/font_size = 32
 placeholder_text = "Ask anything..."
 caret_blink = true
 
-[node name="TextOutput" type="TextEdit" parent="vr_theater/CanvasLayer/ChatWindow"]
+[node name="TextOutput" type="TextEdit" parent="vr_theater/CanvasLayer/ChatWindow" unique_id=678255763]
 offset_left = 280.0
 offset_top = 616.0
 offset_right = 1640.0
@@ -200,9 +199,9 @@ offset_bottom = 936.0
 theme_override_font_sizes/font_size = 32
 wrap_mode = 1
 
-[node name="ControlButtons" type="Node2D" parent="vr_theater/CanvasLayer"]
+[node name="ControlButtons" type="Node2D" parent="vr_theater/CanvasLayer" unique_id=595720042]
 
-[node name="LabelCamera" type="Label" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="LabelCamera" type="Label" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=302544503]
 offset_left = 1704.0
 offset_top = 40.0
 offset_right = 1896.0
@@ -212,7 +211,7 @@ text = "Camera"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButtonLeftArrowCamera" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonLeftArrowCamera" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=820353677]
 offset_left = 1704.0
 offset_top = 96.0
 offset_right = 1793.0
@@ -222,7 +221,7 @@ texture_normal = ExtResource("7_kgmfh")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextureButtonRightArrowCamera" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonRightArrowCamera" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=1407241008]
 offset_left = 1808.0
 offset_top = 96.0
 offset_right = 1897.0
@@ -232,7 +231,7 @@ texture_normal = ExtResource("8_jxqc1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="LabelContent" type="Label" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="LabelContent" type="Label" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=382489495]
 offset_left = 1704.0
 offset_top = 200.0
 offset_right = 1896.0
@@ -242,7 +241,7 @@ text = "Content"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButtonLeftArrowContent" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonLeftArrowContent" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=83270228]
 offset_left = 1704.0
 offset_top = 256.0
 offset_right = 1792.0
@@ -251,7 +250,7 @@ texture_normal = ExtResource("7_kgmfh")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextureButtonRightArrowContent" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonRightArrowContent" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=274393440]
 offset_left = 1808.0
 offset_top = 256.0
 offset_right = 1896.0
@@ -260,7 +259,7 @@ texture_normal = ExtResource("8_jxqc1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="LabelModel" type="Label" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="LabelModel" type="Label" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=1332193751]
 offset_left = 1704.0
 offset_top = 360.0
 offset_right = 1896.0
@@ -270,7 +269,7 @@ text = "Model"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButtonLeftArrowModel" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonLeftArrowModel" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=440863660]
 offset_left = 1704.0
 offset_top = 416.0
 offset_right = 1792.0
@@ -279,7 +278,7 @@ texture_normal = ExtResource("7_kgmfh")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="TextureButtonRightArrowModel" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="TextureButtonRightArrowModel" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=1925600534]
 offset_left = 1808.0
 offset_top = 416.0
 offset_right = 1896.0
@@ -288,7 +287,7 @@ texture_normal = ExtResource("8_jxqc1")
 ignore_texture_size = true
 stretch_mode = 0
 
-[node name="ChatToggleButton" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons"]
+[node name="ChatToggleButton" type="TextureButton" parent="vr_theater/CanvasLayer/ControlButtons" unique_id=1341903538]
 offset_left = 712.0
 offset_top = 1056.0
 offset_right = 1208.0

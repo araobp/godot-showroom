@@ -2,10 +2,25 @@
 
 [ext_resource type="PackedScene" uid="uid://bjyvqfhp3fit0" path="res://Walk_with_Root.glb" id="1_om8fh"]
 [ext_resource type="Script" uid="uid://qkdwswpwwf2o" path="res://walk_with_root.gd" id="2_ojg4d"]
+[ext_resource type="Texture2D" uid="uid://cqdfp5ror2yt3" path="res://textures/Ground103_1K-JPG/Ground103_1K-JPG_Color.jpg" id="3_yt05t"]
+[ext_resource type="Texture2D" uid="uid://bc1naspmriq45" path="res://textures/Ground103_1K-JPG/Ground103_1K-JPG_NormalGL.jpg" id="4_d25yi"]
+[ext_resource type="Texture2D" uid="uid://cr3mysxshqkjc" path="res://textures/Ground103_1K-JPG/Ground103_1K-JPG_Roughness.jpg" id="5_tr0b2"]
+
+[sub_resource type="Gradient" id="Gradient_ojg4d"]
+offsets = PackedFloat32Array(0.390625, 0.796875)
+colors = PackedColorArray(0.105882354, 0.5764706, 0.8980392, 1, 1, 1, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_tutw6"]
+noise_type = 2
+seed = 9
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5psd7"]
+noise = SubResource("FastNoiseLite_tutw6")
+color_ramp = SubResource("Gradient_ojg4d")
+seamless = true
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_ojg4d"]
-sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
-ground_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
+sky_cover = SubResource("NoiseTexture2D_5psd7")
 
 [sub_resource type="Sky" id="Sky_tutw6"]
 sky_material = SubResource("ProceduralSkyMaterial_ojg4d")
@@ -56,22 +71,20 @@ transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_tutw6"]
 
-[sub_resource type="FastNoiseLite" id="FastNoiseLite_5psd7"]
-frequency = 1.0
-
-[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_yt05t"]
-noise = SubResource("FastNoiseLite_5psd7")
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d25yi"]
-albedo_color = Color(0.151699, 0.298965, 0.319109, 1)
-roughness_texture = SubResource("NoiseTexture2D_yt05t")
-uv1_scale = Vector3(100, 100, 100)
+albedo_color = Color(0.8175213, 0.8175213, 0.81752115, 1)
+albedo_texture = ExtResource("3_yt05t")
+roughness_texture = ExtResource("5_tr0b2")
+normal_enabled = true
+normal_texture = ExtResource("4_d25yi")
+uv1_scale = Vector3(10000, 10000, 10000)
 
 [node name="Walk_with_Root" unique_id=28013265 instance=ExtResource("1_om8fh")]
 script = ExtResource("2_ojg4d")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="0" unique_id=1526178174]
-transform = Transform3D(-0.866023, -0.433016, 0.250001, 0, 0.499998, 0.866027, -0.500003, 0.749999, -0.43301, 0, 0, 0)
+transform = Transform3D(0.990421, -0.11958149, 0.06904018, 4.0448604e-08, 0.49999806, 0.8660265, -0.13808078, -0.8577309, 0.49520856, 0, 0, 0)
+light_color = Color(0.9483896, 0.88795507, 0.90888804, 1)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." index="1" unique_id=805869927]
@@ -79,19 +92,19 @@ environment = SubResource("Environment_5psd7")
 
 [node name="Skeleton3D" parent="Armature" parent_id_path=PackedInt32Array(798112666) index="0" unique_id=1757385908]
 bones/1/position = Vector3(0.005827705, 0.97502315, -0.010918903)
-bones/1/rotation = Quaternion(-0.037827015, -0.04074577, -0.02455409, 0.9981513)
-bones/2/rotation = Quaternion(0.007755381, 0.016355414, 0.023730725, 0.9995546)
-bones/3/rotation = Quaternion(0.00900405, 0.0026880126, 0.014062653, 0.99985707)
-bones/4/rotation = Quaternion(0.009922722, 0.0035651245, 0.014408426, 0.9998407)
+bones/1/rotation = Quaternion(-0.03134714, -0.0465273, -0.02827687, 0.99802464)
+bones/2/rotation = Quaternion(0.0051682424, 0.012242049, 0.021528369, 0.99968)
+bones/3/rotation = Quaternion(0.01009114, 0.0021718466, 0.013699119, 0.9998529)
+bones/4/rotation = Quaternion(0.00986808, 0.0023657759, 0.013736656, 0.99985415)
 bones/5/position = Vector3(3.1432137e-09, 0.14856124, -2.1587925e-07)
-bones/5/rotation = Quaternion(0.075648986, -0.0024745478, 0.0031424558, 0.9971265)
+bones/5/rotation = Quaternion(0.07299471, -0.000976872, 0.0039069485, 0.9973243)
 bones/6/position = Vector3(-2.9976945e-09, 0.075315356, 0.028653482)
-bones/6/rotation = Quaternion(-0.07382587, 0.00673016, -0.0018649183, 0.9972468)
+bones/6/rotation = Quaternion(-0.06595838, 0.011932642, -0.001493276, 0.9977499)
 bones/8/position = Vector3(0.05144593, 0.12962155, -0.0007715278)
-bones/8/rotation = Quaternion(-0.6712241, -0.33489856, 0.49642912, -0.43687457)
-bones/9/rotation = Quaternion(0.4811276, 0.11636092, 0.087931976, 0.86443293)
-bones/10/rotation = Quaternion(-0.00046069638, 0.10754289, 0.01384972, 0.9941039)
-bones/11/rotation = Quaternion(0.07492118, -0.36918718, -0.012581372, 0.92624485)
+bones/8/rotation = Quaternion(-0.6706461, -0.3357341, 0.49537086, -0.43831962)
+bones/9/rotation = Quaternion(0.48062038, 0.121836886, 0.084884435, 0.8642654)
+bones/10/rotation = Quaternion(-0.00042273715, 0.10761011, 0.012706658, 0.9941119)
+bones/11/rotation = Quaternion(0.07587038, -0.3705751, -0.012410448, 0.92561543)
 bones/12/position = Vector3(-0.024826815, 0.0428578, 0.011975556)
 bones/12/rotation = Quaternion(0.18089963, 0.056588747, 0.17841235, 0.9655269)
 bones/13/rotation = Quaternion(-0.11504149, 0.070973456, -0.20302165, 0.9697992)
@@ -116,10 +129,10 @@ bones/29/rotation = Quaternion(0.14551476, 0.00029093213, -0.05898206, 0.9875963
 bones/30/position = Vector3(-0.0002645422, 0.020410739, 6.115824e-06)
 bones/30/rotation = Quaternion(0.13806367, 0.0016818965, -0.041271206, 0.9895617)
 bones/32/position = Vector3(-0.051446095, 0.12963365, -0.0010450877)
-bones/32/rotation = Quaternion(0.67167264, -0.33277652, 0.5144249, 0.41651252)
-bones/33/rotation = Quaternion(0.4100178, -0.20603007, -0.10722639, 0.8820088)
-bones/34/rotation = Quaternion(-0.0015456179, -0.11283804, -0.057009544, 0.9919754)
-bones/35/rotation = Quaternion(0.08296812, 0.26166907, 0.02925786, 0.9611398)
+bones/32/rotation = Quaternion(0.668729, -0.33660102, 0.51573056, 0.41656125)
+bones/33/rotation = Quaternion(0.41024303, -0.20505379, -0.11206155, 0.88153034)
+bones/34/rotation = Quaternion(-0.0015796385, -0.112757884, -0.058261883, 0.99191165)
+bones/35/rotation = Quaternion(0.085757226, 0.2598245, 0.027070759, 0.96145934)
 bones/36/rotation = Quaternion(0.1818039, -0.047678396, -0.2074917, 0.9600112)
 bones/37/rotation = Quaternion(-0.11158819, -0.05120114, 0.29044804, 0.9489818)
 bones/38/rotation = Quaternion(-0.16543874, 0.065212466, -0.22565071, 0.95784086)
@@ -136,14 +149,14 @@ bones/50/rotation = Quaternion(0.15260206, -0.0049599833, 0.031338546, 0.9877783
 bones/52/rotation = Quaternion(0.20590433, 0.07885337, 0.028842805, 0.9749634)
 bones/53/rotation = Quaternion(0.14594072, -8.919743e-05, 0.053991105, 0.987819)
 bones/54/rotation = Quaternion(0.13846602, -0.0013081351, 0.037436336, 0.98965853)
-bones/56/rotation = Quaternion(0.13694774, 0.076064184, 0.9853082, -0.06802632)
-bones/57/rotation = Quaternion(-0.15980454, -0.005993071, 0.060560286, 0.9852711)
-bones/58/rotation = Quaternion(0.49232516, -0.06733782, -0.040064342, 0.86687744)
+bones/56/rotation = Quaternion(0.13406815, 0.08638642, 0.98487383, -0.06772552)
+bones/57/rotation = Quaternion(-0.16116399, -0.0155254975, 0.06031778, 0.9849603)
+bones/58/rotation = Quaternion(0.4916842, -0.066268496, -0.03838044, 0.86739975)
 bones/59/rotation = Quaternion(0.3511691, -0.0030206756, 0.00013440788, 0.93630725)
-bones/61/rotation = Quaternion(-0.09263018, -0.026306013, 0.9947563, -0.034463596)
-bones/62/rotation = Quaternion(-0.095045626, 0.085337125, -0.052828044, 0.99040055)
-bones/63/rotation = Quaternion(0.5256408, 0.064810276, 0.0022249578, 0.8482314)
-bones/64/rotation = Quaternion(0.37034348, 0.0034004604, 0.000117993775, 0.92888874)
+bones/61/rotation = Quaternion(-0.08997418, -0.019313643, 0.99512, -0.035608575)
+bones/62/rotation = Quaternion(-0.08288674, 0.08527453, -0.051119752, 0.99158704)
+bones/63/rotation = Quaternion(0.51430666, 0.06077935, 0.0035278848, 0.85544264)
+bones/64/rotation = Quaternion(0.37200376, 0.0035492885, 0.00010506453, 0.9282244)
 
 [node name="AnimationPlayer" parent="." index="3" unique_id=1727195613]
 root_motion_track = NodePath("Armature/Skeleton3D:Root")
